@@ -1,0 +1,4 @@
+Vivado Simulator 2018.2
+Time resolution is 1 fs
+WARNING: Data truncated while reading Datafile: watermarked_image.txt, while loading at index: 0
+WARNING: Data truncated while reading Datafile: noised_watermarked_image.txt, while loading at index: 0
