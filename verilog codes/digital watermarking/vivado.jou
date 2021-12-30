@@ -1,0 +1,141 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 19 05:12:41 2020
+# Process ID: 18336
+# Current directory: C:/Users/student/Desktop/DS Project/digital_watermarking
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9908 C:\Users\student\Desktop\DS Project\digital_watermarking\digital_watermarking.xpr
+# Log file: C:/Users/student/Desktop/DS Project/digital_watermarking/vivado.log
+# Journal file: C:/Users/student/Desktop/DS Project/digital_watermarking\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/student/Desktop/DS Project/digital_watermarking/digital_watermarking.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/student/Desktop/Trash/Week_Three/Week_Three.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/student/Desktop/likhita/likhita.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/student/Desktop/DS Project/digital_watermarking/digital_watermarking.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source unnoised_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top dct [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source testbench.tcl
+current_sim simulation_1
+current_sim simulation_2
+close_sim
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {C:/Users/student/Desktop/watermark_data.txt {C:/Users/student/Desktop/DS Project/digital_watermarking/digital_watermarking.sim/sim_1/behav/xsim/image_data.txt}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/student/Desktop/DS Project/watermark_data.txt}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/student/Desktop/DS Project/watermark_data.txt}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/student/Desktop/DS Project/image_data.txt}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/student/Desktop/DS Project/image_data.txt}}
+launch_simulation
+source testbench.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top unnoised [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top unnoised_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source unnoised_tb.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files C:/Users/student/Desktop/watermark_data.txt] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/student/Desktop/watermark_data.txt
+remove_files  -fileset sim_1 C:/Users/student/Desktop/watermark_data.txt
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/student/Desktop/watermark_data.txt
+export_ip_user_files -of_objects  [get_files C:/Users/student/Desktop/watermark_data.txt] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/student/Desktop/watermark_data.txt
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/student/Desktop/DS Project/digital_watermarking/digital_watermarking.sim/sim_1/behav/xsim/watermark_data.txt}}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top dct [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source testbench.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top unnoised [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top unnoised_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+source unnoised_tb.tcl
+current_sim simulation_5
+close_sim
+close_sim
+launch_simulation
+source unnoised_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/student/Desktop/DS Project/digital_watermarking/digital_watermarking.sim/sim_1/behav/xsim/extracted_watermark.txt}}
+close_sim
+launch_simulation
+source unnoised_tb.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files {{C:/Users/student/Desktop/DS Project/digital_watermarking/digital_watermarking.sim/sim_1/behav/xsim/extracted_watermark.txt}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/student/Desktop/DS Project/digital_watermarking/digital_watermarking.sim/sim_1/behav/xsim/extracted_watermark.txt}}
+launch_simulation
+source unnoised_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top dct [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+close_project

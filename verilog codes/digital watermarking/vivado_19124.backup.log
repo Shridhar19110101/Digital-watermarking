@@ -1,0 +1,472 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov 18 13:29:48 2020
+# Process ID: 19124
+# Current directory: C:/Users/student/Desktop/DS Project/digital_watermarking
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10856 C:\Users\student\Desktop\DS Project\digital_watermarking\digital_watermarking.xpr
+# Log file: C:/Users/student/Desktop/DS Project/digital_watermarking/vivado.log
+# Journal file: C:/Users/student/Desktop/DS Project/digital_watermarking\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/student/Desktop/DS Project/digital_watermarking/digital_watermarking.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/student/Desktop/digital_watermarking' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/student/Desktop/DS Project/image_data.txt'; using path 'C:/Users/student/Desktop/image_data.txt' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/student/Desktop/DS Project/watermark_data.txt'; using path 'C:/Users/student/Desktop/watermark_data.txt' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 866.988 ; gain = 128.379
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/student/Desktop/Week_Three/Week_Three.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+set_property top psnr [current_fileset]
+update_compile_order -fileset sources_1
+set_property top psnr_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/student/Desktop/Week_Three/Week_Three.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'psnr_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/Week_Three/Week_Three.sim/sim_1/behav/xsim/gaussianfilter.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/Week_Three/Week_Three.sim/sim_1/behav/xsim/finallenna.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/Week_Three/Week_Three.sim/sim_1/behav/xsim/medianfilter.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/student/Desktop/Week_Three/Week_Three.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj psnr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/student/Desktop/Week_Three/Week_Three.srcs/sources_1/new/psnr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module psnr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/student/Desktop/Week_Three/Week_Three.srcs/sim_1/new/psnr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module psnr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/student/Desktop/Week_Three/Week_Three.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/student/Desktop/Week_Three/Week_Three.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ce57d4c1bb45421c922dada3a63f240c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot psnr_tb_behav xil_defaultlib.psnr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1fs
+Compiling module xil_defaultlib.psnr
+Compiling module xil_defaultlib.psnr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot psnr_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/student/Desktop/Week_Three/Week_Three.sim/sim_1/behav/xsim/xsim.dir/psnr_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 54.027 ; gain = 0.992
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 18 13:49:55 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 922.879 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/student/Desktop/Week_Three/Week_Three.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "psnr_tb_behav -key {Behavioral:sim_1:Functional:psnr_tb} -tclbatch {psnr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 fs
+source psnr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/psnr_tb/memory1" to the wave window because it has 131072 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/psnr_tb/memory2" to the wave window because it has 131072 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/psnr_tb/array1" to the wave window because it has 131072 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/psnr_tb/array2" to the wave window because it has 131072 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'psnr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 930.199 ; gain = 7.320
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 944.340 ; gain = 0.000
+close_project
+open_project C:/Users/student/Desktop/likhita/likhita.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/student/Desktop/final/final.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+close_project
+open_project C:/Users/student/Desktop/project64/project64.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/student/Desktop/watermark64.txt'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/student/Desktop/lenna64.txt'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+close_project
+open_project C:/Users/student/Desktop/project_5/project_5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'extract' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/watermarked.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/lenna_dct.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/watermark_data.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/extracted.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj extract_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c35a6cddc79f433987b182138aa1b494 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot extract_behav xil_defaultlib.extract xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "extract_behav -key {Behavioral:sim_1:Functional:extract} -tclbatch {extract.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 fs
+source extract.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/extract/lenna" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/extract/watermarkedlenna" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/extract/memory" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/extract/wl_memory" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/extract/DCT" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/extract/extract" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1040.219 ; gain = 79.375
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1040.219 ; gain = 79.375
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property top ssim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ssim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/watermarked.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/lenna_dct.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/watermark_data.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/extracted.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ssim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/student/Desktop/project_5/project_5.srcs/sim_1/new/ssim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ssim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c35a6cddc79f433987b182138aa1b494 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ssim_behav xil_defaultlib.ssim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ssim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ssim_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/ssim_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 54.105 ; gain = 1.043
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 18 14:09:02 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1040.219 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ssim_behav -key {Behavioral:sim_1:Functional:ssim} -tclbatch {ssim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source ssim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/ssim/memory1" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/ssim/memory2" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ssim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1105.141 ; gain = 64.922
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1118.352 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ssim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/watermarked.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/lenna_dct.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/watermark_data.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/extracted.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ssim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/student/Desktop/project_5/project_5.srcs/sim_1/new/ssim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ssim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c35a6cddc79f433987b182138aa1b494 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ssim_behav xil_defaultlib.ssim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ssim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ssim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ssim_behav -key {Behavioral:sim_1:Functional:ssim} -tclbatch {ssim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source ssim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/ssim/memory1" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/ssim/memory2" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ssim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1120.891 ; gain = 2.539
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/student/Desktop/fgt/Verilog_Implemention/project_5.sim/sim_1/behav/xsim/extracted1.txt
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ssim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/watermarked.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/lenna_dct.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/watermark_data.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/extracted.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/extracted1.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ssim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/student/Desktop/project_5/project_5.srcs/sim_1/new/ssim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ssim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c35a6cddc79f433987b182138aa1b494 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ssim_behav xil_defaultlib.ssim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ssim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ssim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ssim_behav -key {Behavioral:sim_1:Functional:ssim} -tclbatch {ssim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source ssim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/ssim/memory1" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/ssim/memory2" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ssim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1132.656 ; gain = 6.254
+close [ open C:/Users/student/Desktop/project_5/project_5.srcs/sources_1/new/hello.v w ]
+add_files C:/Users/student/Desktop/project_5/project_5.srcs/sources_1/new/hello.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/student/Desktop/project_5/project_5.srcs/sim_1/new/test.v w ]
+add_files -fileset sim_1 C:/Users/student/Desktop/project_5/project_5.srcs/sim_1/new/test.v
+update_compile_order -fileset sim_1
+set_property file_type SystemVerilog [get_files  C:/Users/student/Desktop/project_5/project_5.srcs/sources_1/new/hello.v]
+set_property file_type SystemVerilog [get_files  C:/Users/student/Desktop/project_5/project_5.srcs/sim_1/new/test.v]
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/watermarked.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/lenna_dct.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/watermark_data.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/extracted.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/extracted1.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/student/Desktop/project_5/project_5.srcs/sources_1/new/hello.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hello
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/student/Desktop/project_5/project_5.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c35a6cddc79f433987b182138aa1b494 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hello
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 54.035 ; gain = 0.996
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 18 14:53:41 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1142.461 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/student/Desktop/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/test/image1" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/test/image2" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/test/memory1" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/test/memory2" to the wave window because it has 262144 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1151.898 ; gain = 9.438
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1158.133 ; gain = 0.000
+current_sim simulation_5
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1158.133 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 18 15:10:34 2020...
